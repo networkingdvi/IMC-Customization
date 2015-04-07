@@ -1,0 +1,20 @@
+<adapter name="Express220s">
+	<description>Express220s adapter</description>
+	<version>1.0.0</version>
+	<services>
+		<service name="CLICommon">
+			<item type="common">Express220s_Common_CLI.xml</item>
+		</service>
+		
+		<service name="ConfigBackup">
+			<item type="builder_definition">Express220s_Config_Backup_Builder.xml</item>
+			<item type="tcl_script">Express220s_Config_Backup_Builder_Script.xml</item>
+		</service>	
+
+		<service name="CleanupParser">
+			<item type="parser_definition">Express220s_Cleanup_Parser.xml</item>
+			<item type="perl_script">Express220s_Cleanup_Parser_Script.pl</item>
+		</service>
+	</services>
+</adapter>
+
